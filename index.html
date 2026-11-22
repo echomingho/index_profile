@@ -1,87 +1,555 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f5f3ee" />
-    <meta name="description" content="陳茗豪的個人介紹與程式作品集，分享資訊科技學習歷程、程式專案與教學理念。" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f3ee">
+    <meta name="description" content="陳茗豪的個人介紹與程式作品集，分享資訊科技學習歷程、程式專案與教學理念。">
+
     <title>陳茗豪 Chen Ming Hao｜程式作品集</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS：使用 GitHub Pages 正確路徑 -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JavaScript -->
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
     <header class="topbar">
-      <a class="brand" href="#top" aria-label="回到首頁"><span class="brand-mark">MH</span><span>陳茗豪・個人作品集</span></a>
-      <button class="menu-toggle" aria-label="開啟選單" aria-expanded="false">選單 <span>☰</span></button>
-      <nav class="nav" aria-label="主要導覽">
-        <a href="#about">關於我</a><a href="#education">學習歷程</a><a href="#projects">作品</a><a href="#experience">經歷</a><a href="#contact" class="nav-contact">聯絡我 <span>↗</span></a>
-      </nav>
+        <a class="brand" href="#top" aria-label="回到首頁">
+            <span class="brand-mark">MH</span>
+            <span>陳茗豪・個人作品集</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="開啟選單" aria-expanded="false">
+            選單 <span>☰</span>
+        </button>
+
+        <nav class="nav" aria-label="主要導覽">
+            <a href="#about">關於我</a>
+            <a href="#education">學習歷程</a>
+            <a href="#projects">作品</a>
+            <a href="#experience">經歷</a>
+            <a href="#contact" class="nav-contact">聯絡我 <span>↗</span></a>
+        </nav>
     </header>
 
     <main id="top">
-      <section class="hero page-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> 資訊科技系學生・程式開發學習者</p>
-          <h1>你好，我是<br /><span class="name">陳茗豪</span><span class="period">.</span></h1>
-          <p class="hero-lead">從電機到資訊，持續把好奇心寫成作品。</p>
-          <p class="hero-text">目前就讀僑光科技大學資訊科技系，喜歡探索程式設計、電腦技術與軟體開發，也樂於把學習過程中的發現分享給更多人。</p>
-          <div class="hero-actions"><a class="button button-dark" href="#projects">看看我的作品 <span>↘</span></a><a class="text-link" href="#about">認識我 <span>↓</span></a></div>
-          <div class="hero-meta"><span>目前所在地 <strong>台灣・台中</strong></span><span>學習方向 <strong>程式設計 / 網頁開發</strong></span></div>
-        </div>
-        <div class="hero-visual">
-          <div class="portrait-frame"><div class="portrait-placeholder"><img class="portrait-photo" src="../img/Mingho.jpg" alt="陳茗豪的個人照片" /><span class="portrait-caption">CHEN<br />MING HAO</span></div></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="note-card"><span class="note-icon">✳</span><span>保持好奇<br /><strong>持續實作</strong></span></div>
-          <span class="visual-index">01 — 04</span>
-        </div>
-        <a class="scroll-cue" href="#about"><span class="scroll-line"></span>向下探索</a>
-      </section>
 
-      <section class="intro section-wrap" id="about">
-        <div class="section-label"><span>01</span> 關於我</div>
-        <div class="intro-content"><p class="section-kicker">CURIOUS BY NATURE · ALWAYS LEARNING</p><h2>把技術學會，<br /><span>再把知識分享出去。</span></h2><div class="intro-bottom"><p>我畢業於國立臺中高級工業職業學校電機科，目前就讀僑光科技大學資訊科技系。從高中接觸電機專業，到大學進一步學習資訊科技，我逐漸培養出對程式設計與軟體開發的興趣。<br /><br />我喜歡自主探索新技術，並把所學應用在 Minecraft 伺服器插件、Python 練習和網頁設計上。經營 Twitch 直播的經驗，也讓我累積了口語表達、觀眾互動與社群經營能力。</p><a class="circle-link" href="#contact" aria-label="聯絡我">↗</a></div></div>
-      </section>
+        <!-- 首頁 Hero -->
+        <section class="hero page-grid">
 
-      <section class="experience section-wrap" id="education">
-        <div class="section-label"><span>02</span> 學習歷程</div>
-        <div class="experience-content"><div class="section-heading"><div><p class="section-kicker">EDUCATION & SKILLS</p><h2>從電機出發，<br />向資訊前進。</h2></div><p class="section-side-note">在不同領域的學習中，建立動手實作與持續探索的習慣。</p></div>
-          <div class="timeline">
-            <article class="timeline-item"><div class="timeline-date">目前就讀</div><div><h3>僑光科技大學・資訊科技系</h3><p class="timeline-place">大學 · 台灣台中</p><p>學習程式設計、資訊科技與網頁開發，持續透過自主練習和專案累積實作經驗。</p></div><span class="timeline-arrow">↗</span></article>
-            <article class="timeline-item"><div class="timeline-date">高中畢業</div><div><h3>國立臺中高級工業職業學校・電機科</h3><p class="timeline-place">高中 · 台灣台中</p><p>接觸電機專業、電腦及硬體相關知識，建立技術實作的基礎。</p></div><span class="timeline-arrow">↗</span></article>
-          </div>
-          <div class="skills"><span>技術能力</span><div class="skill-list"><span>Python 基礎</span><span>C++ 基礎</span><span>Scratch</span><span>HTML</span><span>CSS</span><span>Minecraft 插件研究</span><span>電腦硬體</span><span>網路與伺服器</span></div></div>
-        </div>
-      </section>
+            <div class="hero-copy">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    資訊科技系學生・程式開發學習者
+                </p>
 
-      <section class="projects section-wrap" id="projects">
-        <div class="section-label"><span>03</span> 專案作品</div>
-        <div class="projects-content"><div class="projects-header"><div><p class="section-kicker">SELECTED PROJECTS</p><h2>從興趣開始，動手實作。</h2></div><p>透過自己的專案練習程式邏輯，也記錄一路上的學習成果。</p></div>
-          <div class="project-grid">
-            <article class="project-card project-large"><div class="project-art art-lilac"><span class="art-label">PLUGIN DEVELOPMENT · PERSONAL</span><div class="art-window"><span class="window-dots">● ● ●</span><div class="window-lines"><i></i><i></i><i></i></div><div class="window-circle">MC</div></div><span class="art-sticker">為伺服器<br />增加新功能</span></div><div class="project-info"><div><h3>Minecraft 伺服器插件開發</h3><p>C++・VS Code・功能設計與伺服器測試</p></div><span class="project-link" aria-hidden="true">↗</span></div><p class="project-description">自主研究 Minecraft 伺服器插件開發，嘗試透過程式設計增加伺服器功能，負責插件研究、功能設計、程式開發及伺服器測試。</p></article>
-            <article class="project-card"><div class="project-art art-peach"><span class="art-label">WEB DEVELOPMENT · PERSONAL</span><div class="brand-art"><span>關於我</span><i>PERSONAL<br />PORTFOLIO</i><b>✳</b></div></div><div class="project-info"><div><h3>個人介紹網站</h3><p>HTML・VS Code・網頁設計</p></div><a class="project-link" href="https://drive.google.com/drive/folders/1bemNr6QR3WrjAKi3OKh8vDoKK5P8nkzb?usp=sharing" target="_blank" rel="noreferrer" aria-label="開啟個人介紹網站作品連結">↗</a></div><p class="project-description">自行規劃並製作個人作品集網站，展示個人背景、技術能力及專案成果。</p></article>
-            <article class="project-card"><div class="project-art art-green"><span class="art-label">PYTHON · SELF LEARNING</span><div class="mobile-art"><div class="mobile-top"></div><span>一步一步<br /><b>練習邏輯。</b></span><i>Learn by doing　→</i></div><span class="leaf leaf-a">✳</span><span class="leaf leaf-b">✳</span></div><div class="project-info"><div><h3>Python 程式練習</h3><p>Python・基礎語法與程式邏輯</p></div><span class="project-link" aria-hidden="true">↗</span></div><p class="project-description">透過條件判斷、迴圈與基礎程式練習，累積拆解問題和實際動手解題的經驗。</p></article>
-          </div>
-        </div>
-      </section>
+                <h1>
+                    你好，我是<br>
+                    <span class="name">陳茗豪</span><span class="period">.</span>
+                </h1>
 
-      <section class="experience section-wrap extra-section" id="experience">
-        <div class="section-label"><span>04</span> 經歷與特質</div>
-        <div class="experience-content"><div class="section-heading"><div><p class="section-kicker">COMMUNITY & LEADERSHIP</p><h2>在交流與合作中，<br />一起成長。</h2></div></div>
-          <div class="timeline">
-            <article class="timeline-item"><div class="timeline-date">自主經營</div><div><h3>Twitch 直播經營</h3><p class="timeline-place">內容規劃・社群互動</p><p>規劃直播內容、與觀眾長期互動並經營社群，培養口語表達、臨場應對與社群管理經驗。</p></div><span class="timeline-arrow">↗</span></article>
-            <article class="timeline-item"><div class="timeline-date">校園幹部</div><div><h3>風紀股長・服務隊隊長</h3><p class="timeline-place">責任承擔・團隊合作</p><p>曾擔任三年風紀股長及三年級服務隊隊長，練習協調分工、承擔責任與帶領團隊。</p></div><span class="timeline-arrow">↗</span></article>
-          </div>
-          <div class="strength-list"><span>自主學習</span><span>溝通表達</span><span>問題解決</span><span>團隊合作</span><span>持續精進</span></div>
-        </div>
-      </section>
+                <p class="hero-lead">
+                    從電機到資訊，持續把好奇心寫成作品。
+                </p>
 
-      <section class="philosophy section-wrap" id="teaching"><div class="section-label"><span>05</span> 程式教育理念</div><div class="philosophy-content"><p class="section-kicker">LEARN · UNDERSTAND · CREATE</p><h2>程式教育不只是記住語法，<br /><span>更是學會思考與解決問題。</span></h2><p>我希望學生能理解程式背後的邏輯，透過實際操作培養獨立思考與解決問題的能力。我也想把自己學習過程中遇到的問題、探索經驗和解決方法，轉化成容易理解的分享。雖然目前沒有正式教學經驗，我願意從基礎開始學習教學技巧，陪伴學生探索程式設計的樂趣。</p></div></section>
+                <p class="hero-text">
+                    目前就讀僑光科技大學資訊科技系，喜歡探索程式設計、電腦技術與軟體開發，也樂於把學習過程中的發現分享給更多人。
+                </p>
 
-      <section class="contact section-wrap" id="contact"><div class="contact-shape">✳</div><div class="section-label"><span>06</span> 聯絡我</div><div class="contact-content"><p class="section-kicker">LET'S LEARN & BUILD TOGETHER</p><h2>保持好奇，<br /><span>一起探索更多可能。</span></h2><p>歡迎交流程式學習、資訊科技、教學想法，或分享合作機會。</p><a class="button button-light" href="mailto:yangxiao170@gmail.com">yangxiao170@gmail.com <span>↗</span></a><div class="social-links"><a href="https://github.com/echomingho" target="_blank" rel="noreferrer">GitHub ↗</a><a href="tel:0908239557">0908-239-557 ↗</a><span>台灣・台中</span></div></div></section>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#projects">
+                        看看我的作品 <span>↘</span>
+                    </a>
+                    <a class="text-link" href="#about">
+                        認識我 <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>目前所在地 <strong>台灣・台中</strong></span>
+                    <span>學習方向 <strong>程式設計 / 網頁開發</strong></span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <div class="portrait-placeholder">
+
+                        <!-- 個人照片 -->
+                        <img
+                            class="portrait-photo"
+                            src="./img/Mingho.jpg"
+                            alt="陳茗豪的個人照片"
+                            onerror="this.style.display='none'"
+                        >
+
+                        <span class="portrait-caption">
+                            CHEN<br>MING HAO
+                        </span>
+
+                    </div>
+                </div>
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="note-card">
+                    <span class="note-icon">✳</span>
+                    <span>保持好奇<br><strong>持續實作</strong></span>
+                </div>
+
+                <span class="visual-index">01 — 04</span>
+            </div>
+
+            <a class="scroll-cue" href="#about">
+                <span class="scroll-line"></span>
+                向下探索
+            </a>
+
+        </section>
+
+
+        <!-- 關於我 -->
+        <section class="intro section-wrap" id="about">
+
+            <div class="section-label">
+                <span>01</span> 關於我
+            </div>
+
+            <div class="intro-content">
+
+                <p class="section-kicker">
+                    CURIOUS BY NATURE · ALWAYS LEARNING
+                </p>
+
+                <h2>
+                    把技術學會，<br>
+                    <span>再把知識分享出去。</span>
+                </h2>
+
+                <div class="intro-bottom">
+
+                    <p>
+                        我畢業於國立臺中高級工業職業學校電機科，目前就讀僑光科技大學資訊科技系。從高中接觸電機專業，到大學進一步學習資訊科技，我逐漸培養出對程式設計與軟體開發的興趣。
+                        <br><br>
+                        我喜歡自主探索新技術，並把所學應用在 Minecraft 伺服器插件、Python 練習和網頁設計上。經營 Twitch 直播的經驗，也讓我累積了口語表達、觀眾互動與社群經營能力。
+                    </p>
+
+                    <a class="circle-link" href="#contact" aria-label="聯絡我">
+                        ↗
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 學習歷程與技能 -->
+        <section class="experience section-wrap" id="education">
+
+            <div class="section-label">
+                <span>02</span> 學習歷程
+            </div>
+
+            <div class="experience-content">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-kicker">EDUCATION & SKILLS</p>
+                        <h2>
+                            從電機出發，<br>
+                            向資訊前進。
+                        </h2>
+                    </div>
+
+                    <p class="section-side-note">
+                        在不同領域的學習中，建立動手實作與持續探索的習慣。
+                    </p>
+
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-date">目前就讀</div>
+
+                        <div>
+                            <h3>僑光科技大學・資訊科技系</h3>
+                            <p class="timeline-place">大學 · 台灣台中</p>
+                            <p>
+                                學習程式設計、資訊科技與網頁開發，持續透過自主練習和專案累積實作經驗。
+                            </p>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+
+                    </article>
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-date">高中畢業</div>
+
+                        <div>
+                            <h3>國立臺中高級工業職業學校・電機科</h3>
+                            <p class="timeline-place">高中 · 台灣台中</p>
+                            <p>
+                                接觸電機專業、電腦及硬體相關知識，建立技術實作的基礎。
+                            </p>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+
+                    </article>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>技術能力</span>
+
+                    <div class="skill-list">
+                        <span>Python 基礎</span>
+                        <span>C++ 基礎</span>
+                        <span>Scratch</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Minecraft 插件研究</span>
+                        <span>電腦硬體</span>
+                        <span>網路與伺服器</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 專案作品 -->
+        <section class="projects section-wrap" id="projects">
+
+            <div class="section-label">
+                <span>03</span> 專案作品
+            </div>
+
+            <div class="projects-content">
+
+                <div class="projects-header">
+
+                    <div>
+                        <p class="section-kicker">SELECTED PROJECTS</p>
+                        <h2>從興趣開始，動手實作。</h2>
+                    </div>
+
+                    <p>
+                        透過自己的專案練習程式邏輯，也記錄一路上的學習成果。
+                    </p>
+
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- Minecraft -->
+                    <article class="project-card project-large">
+
+                        <div class="project-art art-lilac">
+
+                            <span class="art-label">
+                                PLUGIN DEVELOPMENT · PERSONAL
+                            </span>
+
+                            <div class="art-window">
+                                <span class="window-dots">● ● ●</span>
+
+                                <div class="window-lines">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+
+                                <div class="window-circle">MC</div>
+                            </div>
+
+                            <span class="art-sticker">
+                                為伺服器<br>增加新功能
+                            </span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div>
+                                <h3>Minecraft 伺服器插件開發</h3>
+                                <p>C++・VS Code・功能設計與伺服器測試</p>
+                            </div>
+
+                            <span class="project-link" aria-hidden="true">↗</span>
+
+                        </div>
+
+                        <p class="project-description">
+                            自主研究 Minecraft 伺服器插件開發，嘗試透過程式設計增加伺服器功能，負責插件研究、功能設計、程式開發及伺服器測試。
+                        </p>
+
+                    </article>
+
+
+                    <!-- 個人網站 -->
+                    <article class="project-card">
+
+                        <div class="project-art art-peach">
+
+                            <span class="art-label">
+                                WEB DEVELOPMENT · PERSONAL
+                            </span>
+
+                            <div class="brand-art">
+                                <span>關於我</span>
+                                <i>PERSONAL<br>PORTFOLIO</i>
+                                <b>✳</b>
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div>
+                                <h3>個人介紹網站</h3>
+                                <p>HTML・CSS・網頁設計</p>
+                            </div>
+
+                            <a
+                                class="project-link"
+                                href="https://echomingho.github.io/index_profile/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="開啟個人介紹網站"
+                            >↗</a>
+
+                        </div>
+
+                        <p class="project-description">
+                            自行規劃並製作個人作品集網站，展示個人背景、技術能力及專案成果。
+                        </p>
+
+                    </article>
+
+
+                    <!-- Python -->
+                    <article class="project-card">
+
+                        <div class="project-art art-green">
+
+                            <span class="art-label">
+                                PYTHON · SELF LEARNING
+                            </span>
+
+                            <div class="mobile-art">
+                                <div class="mobile-top"></div>
+                                <span>
+                                    一步一步<br>
+                                    <b>練習邏輯。</b>
+                                </span>
+                                <i>Learn by doing　→</i>
+                            </div>
+
+                            <span class="leaf leaf-a">✳</span>
+                            <span class="leaf leaf-b">✳</span>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div>
+                                <h3>Python 程式練習</h3>
+                                <p>Python・基礎語法與程式邏輯</p>
+                            </div>
+
+                            <span class="project-link" aria-hidden="true">↗</span>
+
+                        </div>
+
+                        <p class="project-description">
+                            透過條件判斷、迴圈與基礎程式練習，累積拆解問題和實際動手解題的經驗。
+                        </p>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 經歷與特質 -->
+        <section class="experience section-wrap extra-section" id="experience">
+
+            <div class="section-label">
+                <span>04</span> 經歷與特質
+            </div>
+
+            <div class="experience-content">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-kicker">COMMUNITY & LEADERSHIP</p>
+                        <h2>
+                            在交流與合作中，<br>
+                            一起成長。
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-date">自主經營</div>
+
+                        <div>
+                            <h3>Twitch 直播經營</h3>
+                            <p class="timeline-place">內容規劃・社群互動</p>
+                            <p>
+                                規劃直播內容、與觀眾長期互動並經營社群，培養口語表達、臨場應對與社群管理經驗。
+                            </p>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+
+                    </article>
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-date">校園幹部</div>
+
+                        <div>
+                            <h3>風紀股長・服務隊隊長</h3>
+                            <p class="timeline-place">責任承擔・團隊合作</p>
+                            <p>
+                                曾擔任三年風紀股長及三年級服務隊隊長，練習協調分工、承擔責任與帶領團隊。
+                            </p>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+
+                    </article>
+
+                </div>
+
+                <div class="strength-list">
+                    <span>自主學習</span>
+                    <span>溝通表達</span>
+                    <span>問題解決</span>
+                    <span>團隊合作</span>
+                    <span>持續精進</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 程式教育理念 -->
+        <section class="philosophy section-wrap" id="teaching">
+
+            <div class="section-label">
+                <span>05</span> 程式教育理念
+            </div>
+
+            <div class="philosophy-content">
+
+                <p class="section-kicker">
+                    LEARN · UNDERSTAND · CREATE
+                </p>
+
+                <h2>
+                    程式教育不只是記住語法，<br>
+                    <span>更是學會思考與解決問題。</span>
+                </h2>
+
+                <p>
+                    我希望學生能理解程式背後的邏輯，透過實際操作培養獨立思考與解決問題的能力。我也想把自己學習過程中遇到的問題、探索經驗和解決方法，轉化成容易理解的分享。雖然目前沒有正式教學經驗，我願意從基礎開始學習教學技巧，陪伴學生探索程式設計的樂趣。
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- 聯絡我 -->
+        <section class="contact section-wrap" id="contact">
+
+            <div class="contact-shape">✳</div>
+
+            <div class="section-label">
+                <span>06</span> 聯絡我
+            </div>
+
+            <div class="contact-content">
+
+                <p class="section-kicker">
+                    LET'S LEARN & BUILD TOGETHER
+                </p>
+
+                <h2>
+                    保持好奇，<br>
+                    <span>一起探索更多可能。</span>
+                </h2>
+
+                <p>
+                    歡迎交流程式學習、資訊科技、教學想法，或分享合作機會。
+                </p>
+
+                <a class="button button-light" href="mailto:yangxiao170@gmail.com">
+                    yangxiao170@gmail.com <span>↗</span>
+                </a>
+
+                <div class="social-links">
+
+                    <a
+                        href="https://github.com/echomingho"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >GitHub ↗</a>
+
+                    <a href="tel:0908239557">0908-239-557 ↗</a>
+
+                    <span>台灣・台中</span>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
-    <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">MH</span><span>陳茗豪・個人作品集</span></a><span>© 2026 陳茗豪。版權所有｜使用 OpenAI Codex 輔助製作</span><a href="#top">回到頂部 ↑</a></footer>
-    <script src="script.js"></script>
-  </body>
+
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+
+        <a class="brand" href="#top">
+            <span class="brand-mark">MH</span>
+            <span>陳茗豪・個人作品集</span>
+        </a>
+
+        <span>
+            © 2026 陳茗豪。版權所有｜使用 OpenAI Codex 輔助製作
+        </span>
+
+        <a href="#top">回到頂部 ↑</a>
+
+    </footer>
+
+</body>
 </html>
